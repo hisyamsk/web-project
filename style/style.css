@@ -3,9 +3,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: white;
-}
-
-.container {
     max-width: 80%;
     margin: auto;
 }
@@ -27,4 +24,61 @@ body {
     text-decoration: none;
     color: black;
     margin: 2em;
+}
+
+.navbar > .company > img{
+    width: 100px;
+    height: 80px;
+}
+
+.presentation {
+    width: 100%;
+    margin-top: 4em;
+    margin-left: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.introduction {
+    /* border: 2px solid; */
+    flex: 1;
+}
+
+.intro-text {
+    /* border: 2px solid; */
+}
+
+.intro-text > h1 {
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.intro-text > p {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.cover {
+    flex: 1;
+}
+
+.cover > img {
+    margin-left: 10px;
+    width: 470px;
+    height: 350px;
+}
+
+.shop-now {
+    padding: 20px 0px 0px 0px;
+}
+
+.button {
+    font-size: 13px;
+    border: 2px groove black;
+    border-radius: 18px;
+    border-width: thin;
+    background-color: transparent;
+    width: 100px;
+    height: 38px;
+    cursor: pointer;
 }
