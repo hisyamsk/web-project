@@ -7,6 +7,7 @@ body {
     margin: auto;
 }
 
+
 .navbar {
     padding-left: 20px;
     height: 80px;
@@ -26,15 +27,16 @@ body {
     margin: 2em;
 }
 
-.navbar > .company > img{
-    width: 100px;
-    height: 80px;
+.navbar > .company > h2{
+    padding-left: 16px;
+    font-weight: 600;
 }
 
 .presentation {
     width: 100%;
     margin-top: 4em;
     margin-left: 2em;
+    min-height: 5vh;
     display: flex;
     align-items: center;
 }
@@ -51,6 +53,7 @@ body {
 .intro-text > h1 {
     font-size: 42px;
     font-weight: 500;
+    height: 100px;
 }
 
 .intro-text > p {
@@ -63,9 +66,11 @@ body {
 }
 
 .cover > img {
-    margin-left: 10px;
+    margin-left: 35px;
+    margin-top: 20px;
     width: 470px;
-    height: 350px;
+    height: 340px;
+    animation: drop 1.5s ease;
 }
 
 .shop-now {
@@ -81,4 +86,16 @@ body {
     width: 100px;
     height: 38px;
     cursor: pointer;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
