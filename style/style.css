@@ -88,6 +88,46 @@ body {
     cursor: pointer;
 }
 
+.why-us {
+    text-align: center;
+    margin: 65px;
+}
+
+.why-us > h2 {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.keunggulan {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 10px 10px;
+    justify-content: space-between;
+    animation: drop 1.5s ease;
+}
+
+.keunggulan-1 > img, .keunggulan-2 > img, .keunggulan-3 > img {
+    height: 90px;   
+    width: 90px;
+}
+
+.keunggulan-1, .keunggulan-2, .keunggulan-3 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+.keunggulan-2 {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+
 @keyframes drop {
     0% {
         opacity: 0;
