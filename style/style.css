@@ -46,10 +46,6 @@ body {
     flex: 1;
 }
 
-.intro-text {
-    /* border: 2px solid; */
-}
-
 .intro-text > h1 {
     font-size: 42px;
     font-weight: 500;
@@ -127,6 +123,23 @@ body {
     border-right: 2px solid black;
 }
 
+.shop-now-2 {
+    height: 100px;
+    margin-top: 50px;
+}
+
+.shop-now-2 > .button-2 {
+    font-size: 13px;
+    border: 2px groove black;
+    border-radius: 18px;
+    border-width: thin;
+    background-color: transparent;
+    width: 100px;
+    height: 38px;
+    cursor: pointer;
+    margin-left: 38em;
+    
+}
 
 @keyframes drop {
     0% {
