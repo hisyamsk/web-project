@@ -42,23 +42,20 @@ body {
 }
 
 .introduction {
-    /* border: 2px solid; */
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .intro-text > h1 {
     font-size: 42px;
     font-weight: 500;
-    height: 100px;
 }
 
 .intro-text > p {
+
     font-size: 17px;
     font-weight: normal;
-}
-
-.cover {
-    flex: 1;
 }
 
 .cover > img {
@@ -125,10 +122,12 @@ body {
 
 .shop-now-2 {
     height: 100px;
-    margin-top: 50px;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
 }
 
-.shop-now-2 > .button-2 {
+.button-2 {
     font-size: 13px;
     border: 2px groove black;
     border-radius: 18px;
@@ -137,9 +136,8 @@ body {
     width: 100px;
     height: 38px;
     cursor: pointer;
-    margin-left: 38em;
-    
 }
+
 
 @keyframes drop {
     0% {
@@ -150,5 +148,59 @@ body {
     100% {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .presentation {
+        margin: auto;
+        flex-direction: column;
+        width: 80%;
+        margin-top: 5em;
+    }
+
+    .introduction {
+        order: 1;
+        align-items: center;
+    }
+
+    .intro-text > h1{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .intro-text > p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .cover > img {
+        width: 390px;
+        height: 280px;
+    }
+
+    .why-us {
+        font-size: 18px;
+    }
+    
+    .keunggulan {
+        width: 80%;
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    .keunggulan-1, .keunggulan-2, .keunggulan-3 {
+        font-size: 16px;
+    }
+
+    .keunggulan-1 > img, .keunggulan-2 > img, .keunggulan-3 > img {
+        height: 80px;   
+        width: 80px;
+    }
+
+    .keunggulan-2 {
+        border: none;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
     }
 }
