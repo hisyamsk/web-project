@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
+*{
+  padding: 0px;
+  margin: 0px;
+}
 body {
     font-family: 'Poppins', sans-serif;
     background-color: white;
@@ -108,14 +111,14 @@ body {
 }
 
 .keunggulan-1 > img, .keunggulan-2 > img, .keunggulan-3 > img {
-    height: 90px;   
+    height: 90px;
     width: 90px;
 }
 
 .keunggulan-1, .keunggulan-2, .keunggulan-3 {
     padding: 20px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -138,4 +141,186 @@ body {
         opacity: 1;
         transform: translateY(0px);
     }
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+}
+
+.up_floaxbox{
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.pr_bg{
+  width:30%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  background-size: 50% 50%;
+  justify-content: center;
+}
+
+.box1{
+  flex-grow: 1;
+  background-image: linear-gradient(0deg, #AA1D28, rgba(255,0,0,0)),url('../img/Untitled.png');
+  background-size: cover;
+
+}
+.box2{
+  background: linear-gradient(#B7D12B, rgba(255,0,0,0)),url('../img/potato.png');
+  background-size: cover;
+}
+.btm_box{
+  top: 48%;
+  position:relative;
+  width: 100%
+}
+.line_box{
+  height: 2em;
+  background-color: #772B39;
+  opacity: 0.5;
+}
+.product_floatbox{
+  top:100%;
+  display:flex;
+  position: absolute;
+  z-index: 10;
+}
+.product_box{
+  width:30%;
+  height: auto;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.buy_btn{
+  margin: auto auto 10px auto;
+  border: 5px solid #579A83;
+  width: 140px;
+  height: 64px;
+  background-color: #F9C901;
+  color: white;
+  font-size: 16px;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+.chart_btn{
+  margin: 0 auto auto auto;
+  border: 5px solid #579A83;
+  width: 140px;
+  height: 64px;
+  background-color: #772B39;
+  color: white;
+  font-size: 16px;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+.img{
+  width:auto;
+  text-align:center;
+  padding:20px;
+  max-width:100%;
+  height:auto;
+  background-size: cover;
+}
+.b1{
+
+}
+.b2 {
+}
+.b3{
+
+}
+.boxed{
+  justify-content: center;
+  display: flex;
+}
+.scroll_box{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  border: 1px solid;
+  border-radius:40px;
+}
+.ball{
+  border: 1px solid;
+  border-radius: 50%;
+  width: 50px;
+  height:50px;
+}
+.big_box1{
+  margin: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.text_box{
+  position: relative;
+  align-items: center;
+  margin: 4em;
+  width: 50%;
+}
+.text_box h1{
+  position: relative;
+  margin: 1em;
+  text-transform: uppercase;
+}
+.text_box h3{
+  text-indent: 40px;
+  margin: 1em;
+  font-size: 16px;
+  font-weight: lighter;
+  box-sizing:content-box;
+}
+.connect_box button{
+  margin: 1em 4em;
+  position:relative;
+  background-color: #88E244;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+.petani{
+  position:relative;
+  text-align: center;
+  width: 50%;
+  height: 80%;
+}
+.petani img{
+  width:60%;
+  height:90%;
+}
+footer{
+  position: relative;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background: #D2B48C;
+}
+div.contact_box{
+  bottom: 0;
+  position: relative;
+  font-size: 10px;
+  color: #CC9759;
+  text-transform: uppercase;
+  width: : 100%;
+  height: 6em;
+}
+.contact_list{
+  display: flex;
+}
+.icons{
+  padding: 3px;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  object-fit: contain;
 }
