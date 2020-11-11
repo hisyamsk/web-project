@@ -7,29 +7,40 @@ body {
     margin: auto;
 }
 
-
-.navbar {
-    padding-left: 20px;
-    height: 80px;
+header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding-left: 37px;
+    padding-right: 37px;
 }
 
-.navbar > .navbar_nav {
-    display: flex;
-    list-style: none;
+.company > h2 {
+    font-size: 26px;
+    font-weight: 500;
 }
 
-.navbar > .navbar_nav > li > a {
+li, a{
     text-decoration: none;
     color: black;
-    margin: 2em;
+    font-size: 17px;
 }
 
-.navbar > .company > h2{
-    padding-left: 16px;
-    font-weight: 600;
+.nav_links {
+    list-style: none;
+    padding-right: 20px;
+}
+
+.nav_links > li {
+    display: inline-block;
+    padding: 12px 20px;
+}
+
+.nav_links > li > a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links > li > a:hover {
+    color: crimson;
 }
 
 .presentation {
@@ -72,15 +83,21 @@ body {
 
 .button {
     font-size: 13px;
-    border: 2px groove black;
+    border: 2px solid black;
     border-radius: 18px;
     border-width: thin;
     background-color: transparent;
     width: 100px;
     height: 38px;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 
+.button:hover {
+    border: 2px solid crimson;
+    color: crimson; 
+    border-width: thin; 
+}
 .why-us {
     text-align: center;
     margin: 65px;
@@ -127,18 +144,6 @@ body {
     justify-content: center;
 }
 
-.button-2 {
-    font-size: 13px;
-    border: 2px groove black;
-    border-radius: 18px;
-    border-width: thin;
-    background-color: transparent;
-    width: 100px;
-    height: 38px;
-    cursor: pointer;
-}
-
-
 @keyframes drop {
     0% {
         opacity: 0;
@@ -152,6 +157,30 @@ body {
 }
 
 @media screen and (max-width: 960px) {
+
+    header {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .company > h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .nav {
+        align-items: flex-start;
+    }
+
+    .nav_links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav_links > li > a{
+        font-size: 16px;
+    }
+
     .presentation {
         margin: auto;
         flex-direction: column;
@@ -174,13 +203,20 @@ body {
         text-align: center;
     }
 
+    .cover {
+        margin-top: -20px;
+    }
+
     .cover > img {
-        width: 390px;
-        height: 280px;
+        margin: auto;
+        width: 300px;
+        height: 190px;
     }
 
     .why-us {
         font-size: 18px;
+        margin: auto;
+        padding-top: 30px;
     }
     
     .keunggulan {
