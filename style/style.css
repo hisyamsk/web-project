@@ -146,53 +146,55 @@ body {
     font-family: 'Poppins', sans-serif;
     max-width: 100%;
 }
-
 .up_floaxbox{
-  display: flex;
+  display: grid;
+  grid-template-rows: 150px 150px auto auto 22em;
+  grid-template-columns:1fr 1fr 1fr;
   width: 100%;
   position: relative;
 }
 .pr_bg{
-  width:30%;
-  height: 300px;
   display: flex;
   align-items: center;
-  background-size: 50% 50%;
   justify-content: center;
 }
 
 .box1{
-  flex-grow: 1;
+  grid-column: 1/span 1;
+  grid-row: 1/3;
   background-image: linear-gradient(0deg, #AA1D28, rgba(255,0,0,0)),url('../img/Untitled.png');
   background-size: cover;
 
 }
+.bk3{
+  grid-column: 3/span 1;
+  grid-row: 1/3;
+  background-image: linear-gradient(0deg, #AA1D28, rgba(255,0,0,0)),url('../img/101263_f.png');
+  background-size: cover;
+}
 .box2{
+  grid-column:2/ span 1;
+  grid-row: 1/3;
   background: linear-gradient(#B7D12B, rgba(255,0,0,0)),url('../img/potato.png');
   background-size: cover;
 }
 .btm_box{
-  top: 48%;
-  position:relative;
+  position: relative;
+
   width: 100%
 }
 .line_box{
   height: 2em;
+  grid-column: 1/4;
   background-color: #772B39;
   opacity: 0.5;
 }
-.product_floatbox{
-  top:100%;
-  display:flex;
-  position: absolute;
-  z-index: 10;
-}
 .product_box{
-  width:30%;
-  height: auto;
+  grid-row: 2/3;
+  z-index: 10;
   margin: 30px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column
 }
 .buy_btn{
   margin: auto auto 10px auto;
@@ -216,7 +218,7 @@ body {
   font-weight: bolder;
   text-transform: capitalize;
 }
-.img{
+img{
   width:auto;
   text-align:center;
   padding:20px;
@@ -225,19 +227,41 @@ body {
   background-size: cover;
 }
 .b1{
-
+grid-column: 1;
 }
 .b2 {
+  grid-column: 2;
 }
 .b3{
-
+grid-column: 3;
 }
+.scroll_box{
+  right: 5%;
+  left:32%;
+  grid-column: 2;
+  grid-row: -1;
+  position: relative;
+  height: 50px;
+  width: 150px;
+  bottom: 0;
+  display: flex;
+  border: 1px solid;
+  border-radius:40px;
+}
+.ball{
+  border: 1px solid;
+  border-radius: 50%;
+  width: 50px;
+  height:50px;
+}
+
 .boxed{
   justify-content: center;
   display: flex;
+  bottom: 0;
 }
 .scroll_box{
-  position: absolute;
+  position: relative;
   bottom: 0;
   display: flex;
   border: 1px solid;
@@ -258,7 +282,7 @@ body {
 .text_box{
   position: relative;
   align-items: center;
-  margin: 4em;
+  margin: 1em;
   width: 50%;
 }
 .text_box h1{
