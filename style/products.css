@@ -45,7 +45,7 @@ li, a{
 
 .up_floaxbox{
   display: grid;
-  grid-template-rows: 150px 150px auto auto 25em;
+  grid-template-rows: 150px 150px auto auto 20em;
   grid-template-columns:1fr 1fr 1fr;
   width: 100%;
   position: relative;
@@ -117,6 +117,9 @@ li, a{
   font-weight: bolder;
   text-transform: capitalize;
 }
+.chart_btn:hover{
+  background-color: #B7D12B;
+}
 img{
   width:auto;
   text-align:center;
@@ -159,4 +162,33 @@ img{
 }
 .ball:hover{
   background-color: #B7D12B;
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+    max-width: 100%;
+  }
+  .up_floaxbox{
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+  .up_floaxbox .box2{
+    display: none;
+  }
+  .line_box{
+    grid-column: 1;
+  }
+  .b2{
+    display: none;
+  }
+  .up_floaxbox .bk3{
+    display: none;
+  }
+  .b3{
+    display: none;
+  }
+  .scroll_box{
+    display: none;
+  }
 }
