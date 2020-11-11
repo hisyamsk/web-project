@@ -148,7 +148,7 @@ body {
 }
 .up_floaxbox{
   display: grid;
-  grid-template-rows: 150px 150px auto auto 22em;
+  grid-template-rows: 150px 150px auto  23em;
   grid-template-columns:1fr 1fr 1fr;
   width: 100%;
   position: relative;
@@ -180,7 +180,6 @@ body {
 }
 .btm_box{
   position: relative;
-
   width: 100%
 }
 .line_box{
@@ -219,11 +218,9 @@ body {
   text-transform: capitalize;
 }
 img{
-  width:auto;
   text-align:center;
   padding:20px;
   max-width:100%;
-  height:auto;
   background-size: cover;
 }
 .b1{
