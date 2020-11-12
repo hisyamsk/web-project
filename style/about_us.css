@@ -129,6 +129,25 @@ header{
   flex-direction: column;
   padding: 0;
 }
+
+.company > h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav {
+  align-items: flex-start;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: center;
+}
+
+.nav_links > li > a{
+  font-size: 16px;
+}
+
 body{
   margin: 0;
   max-width: 100%;
