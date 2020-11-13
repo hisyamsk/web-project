@@ -116,6 +116,10 @@ footer{
   width: 2em;
   border-radius: 50%;
   object-fit: contain;
+  background-color: white;
+}
+.icons:hover{
+  background-color:#CC9759;
 }
 @keyframes drop {
     0% {
