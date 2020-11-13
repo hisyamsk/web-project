@@ -239,4 +239,8 @@ li, a{
         border-top: 2px solid black;
         border-bottom: 2px solid black;
     }
+
+    .shop-now-2 {
+        padding-left: 42px;
+    }
 }
