@@ -149,6 +149,7 @@ li, a{
   max-width:100%;
   height:auto;
   background-size: cover;
+  animation: drop 1.5s ease;
 }
 .b1{
   grid-column: 1;
@@ -159,6 +160,37 @@ li, a{
 }
 .b3{
   grid-column: 3;
+}
+
+.outter_circle{
+  transform: scale(0.5);
+  float: right;
+  bottom: 0;
+  right: 0%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 130px;
+  border: 4px solid red;
+  border-radius: 50%;
+  z-index: 11;
+}
+.inner_cricle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 110px;
+  border: 4px solid pink;
+  border-radius: 50%;
+}
+.inner_cricle:hover{
+  background-color: pink;
+}
+.outter_circle:hover{
+  background-color: red;
 }
 .scroll_box{
   background-color: #AA1D28;
@@ -187,6 +219,17 @@ li, a{
 .ball:hover{
   background-color: #B7D12B;
 }
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 @media only screen and (max-width:900px){
   body{
     max-width: 100%;
@@ -198,18 +241,11 @@ li, a{
   .line_box{
     grid-column: 1/3;
   }
-  .up_floaxbox .bk3{
+  .bk3,.b3,.scroll_box{
     display: none;
   }
   .b2{
     padding: 0;
-  }
-  .b3{
-    display: none;
-  }
-  .scroll_box{
-    display: none;
-  }
 }
 @media only screen and (max-width: 600px) {
 
@@ -276,13 +312,7 @@ li, a{
     grid-template-columns: 1fr;
 
   }
-  .box1{
-    display: none;
-  }
-  .up_floaxbox .box2{
-    display: none;
-  }
-  .line_box{
+    .box1,.box2,.line_box,.b2,.bk3,.b3,.scroll_box{
     display: none;
   }
   .b1{
@@ -291,17 +321,5 @@ li, a{
   .pr{
     padding: 0;
     z-index: 9;
-  }
-  .b2{
-    display: none;
-  }
-  .up_floaxbox .bk3{
-    display: none;
-  }
-  .b3{
-    display: none;
-  }
-  .scroll_box{
-    display: none;
   }
 }

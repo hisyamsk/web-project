@@ -91,6 +91,7 @@ li, a{
 .petani img{
   width:100%;
   height:100%;
+  animation: drop 1.5s ease;
 }
 footer{
   position:relative;
@@ -115,6 +116,17 @@ footer{
   width: 2em;
   border-radius: 50%;
   object-fit: contain;
+}
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 @media(max-width:600px){
@@ -170,4 +182,15 @@ h2{
 .petani{
   width: 100%;
 }
+  footer{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  }
+  .contact_box{
+    width:auto;
+  }
+.contact_box h1{
+  display: none;
+  }
 }
