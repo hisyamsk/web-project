@@ -112,7 +112,7 @@ li, a{
     display: flex;
     width: 90%;
     margin: auto;
-    padding: 10px 10px;
+    padding-left: 3em;
     justify-content: space-between;
     animation: drop 1.5s ease;
 }
