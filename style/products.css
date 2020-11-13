@@ -176,6 +176,8 @@ li, a{
   border: 4px solid red;
   border-radius: 50%;
   z-index: 11;
+  background-color: red;
+  opacity: 0.5;
 }
 .inner_cricle{
   display: flex;
@@ -185,12 +187,13 @@ li, a{
   height: 110px;
   border: 4px solid pink;
   border-radius: 50%;
-}
-.inner_cricle:hover{
   background-color: pink;
 }
+.cart{
+  opacity: 1;
+}
 .outter_circle:hover{
-  background-color: red;
+opacity: 1;
 }
 .scroll_box{
   background-color: #AA1D28;
