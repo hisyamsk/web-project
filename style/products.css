@@ -81,10 +81,27 @@ li, a{
   width: 100%
 }
 .line_box{
+  display:flex;
+  justify-content: space-between;
   height: 2em;
   grid-column: 1/4;
   background-color: #772B39;
   opacity: 0.5;
+}
+.left_arr,.right_arr{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  cursor: pointer;
+}
+.right_arr{
+  transform: scaleX(-1);
+}
+.left_arr:hover{
+  transform: scale(1.5);
+}
+.right_arr:hover{
+  transform: scale(-1.5);
 }
 .product_box{
   grid-row: 2/3;
@@ -94,6 +111,7 @@ li, a{
   flex-direction: column
 }
 .buy_btn{
+  cursor: pointer;
   margin: auto auto 10px auto;
   padding: 10px;
   border: 5px solid #579A83;
@@ -105,7 +123,11 @@ li, a{
   font-weight: bolder;
   text-transform: capitalize;
 }
+.buy_btn:hover{
+  background-color: crimson;
+}
 .chart_btn{
+  cursor: pointer;
   margin: 0 auto auto auto;
   padding: 10px;
   border: 5px solid #579A83;
@@ -120,7 +142,7 @@ li, a{
 .chart_btn:hover{
   background-color: #B7D12B;
 }
-img{
+.pr{
   width:auto;
   text-align:center;
   padding:20px;
@@ -131,6 +153,7 @@ img{
 .b1{
   grid-column: 1;
 }
+
 .b2 {
   grid-column: 2;
 }
@@ -139,7 +162,7 @@ img{
 }
 .scroll_box{
   background-color: #AA1D28;
-  left:43%;
+  left:40%;
   grid-column: 2;
   grid-row: -1;
   position: relative;
@@ -154,6 +177,7 @@ img{
 }
 
 .ball{
+  cursor: pointer;
   background-color: #772B39;
   border: 1px solid;
   border-radius: 50%;
@@ -163,21 +187,86 @@ img{
 .ball:hover{
   background-color: #B7D12B;
 }
-
+@media only screen and (max-width:900px){
+  body{
+    max-width: 100%;
+  }
+  .up_floaxbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .line_box{
+    grid-column: 1/3;
+  }
+  .up_floaxbox .bk3{
+    display: none;
+  }
+  .b2{
+    padding: 0;
+  }
+  .b3{
+    display: none;
+  }
+  .scroll_box{
+    display: none;
+  }
+}
 @media only screen and (max-width: 600px) {
   body{
     max-width: 100%;
+  }
+  .up_floaxbox{
+    background-image: linear-gradient(0deg, #AA1D28, rgba(255,0,0,0));
+  }
+  .arrow{
+    height: 120%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    }
+  .arrow_r,.arrow_l{
+    background-image: url("https://icon-library.com/images/60758.svg.svg");
+    background-size: cover;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.2;
+  }
+  .arrow_r{
+    grid-column: 1;
+    transform: scaleX(-1);
+  }
+  .arrow_l{
+    grid-column: 3;
+  }
+  .arrow_l:hover{
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  .arrow_r:hover{
+    transform: scale(-1.2);
+    opacity: 0.5;
   }
   .up_floaxbox{
     display: grid;
     grid-template-columns: 1fr;
 
   }
+  .box1{
+    display: none;
+  }
   .up_floaxbox .box2{
     display: none;
   }
   .line_box{
-    grid-column: 1;
+    display: none;
+  }
+  .b1{
+    grid-row: 1;
+  }
+  .pr{
+    padding: 0;
+    z-index: 9;
   }
   .b2{
     display: none;
