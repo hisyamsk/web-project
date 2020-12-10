@@ -29,13 +29,55 @@
               Our Products are made from the best, high-quality, all-natural ingredients, to make sure you get the tasty, but also healthy snacks, so you can enjoy them without any worries.
           </p>
           <div class="connect_box">
-            <button type="button" name="button">
+            <button data-toggle="modal" type="button" name="button">
               Connect with us
             </button>
           </div>
         </div>
         <div class="petani">
           <img src="img/farmer.png" alt="petani">
+        </div>
+      </div>
+
+      <div class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">  
+              <span class="close">&times;</span>
+            </div>
+            <div class="modal-div">
+              <a href="https://facebook.com"target="_blank">
+                  <img src="https://icons-for-free.com/iconfiles/png/512/fb+social+social+network+icon-1320191784253690412.png" alt="fb_icon" class="icons">
+              </a>
+              <div class="link">
+                <a href="https://facebook.com">Facebook</a>
+              </div>
+            </div>
+            <div class="modal-div">
+              <a href="https://twitter.com/"target="_blank">
+                <img class="icons" src="https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/twitter-512.png" alt="tw_icon">
+              </a>
+              <div class="link">
+                <a href="https://twitter.com/">Twitter</a>
+              </div>
+            </div>
+            <div class="modal-div">
+              <a href="https://www.instagram.com/"target="_blank">
+                <img class="icons" src="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png" alt="ig_logo">
+              </a>
+              <div class="link">
+                <a href="https://www.instagram.com/">Instagram</a>
+              </div>
+            </div>
+            <div class="modal-div">
+              <a href="https://line.me/"target="_blank">
+                <img class="icons" src="https://seeklogo.com/images/L/line-messenger-logo-F9E667D0A2-seeklogo.com.png" alt="line_icon">
+              </a>
+              <div class="link">
+                <a href="https://line.me/">Line</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -58,5 +100,28 @@
         </div>
       </div>
     </footer>
+
+    <script>
+
+      let button = document.querySelector('button[data-toggle="modal"]');
+      let modal = document.querySelector('.modal');
+      let close = document.querySelector('.close');
+
+      button.addEventListener('click', function() {
+        modal.classList.add('show');
+      });
+      modal.addEventListener('click', function() {
+        modal.classList.remove('show');
+      });
+      modal.querySelector('.modal-content').addEventListener('click', function(e) {
+        e.stopPropagation();
+      })
+      close.addEventListener('click', function() {
+        modal.classList.remove('show');
+      })
+
+
+
+    </script>
   </body>
 </html>
