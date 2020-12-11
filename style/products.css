@@ -222,6 +222,64 @@ opacity: 1;
 .ball:hover{
   background-color: #B7D12B;
 }
+.modal_pro{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+  z-index: 11;
+}
+.modal_pro.show{
+  display: block;
+}
+.modal_dialoge{
+  position: relative;
+  width: auto;
+  max-width: 364px;
+  margin: 4em auto;
+}
+.modalcontent{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 4em;
+  border-radius: 10px;
+}
+.modal-header{
+  display: flex;
+  padding-left: 0px;
+  text-transform: capitalize;
+}
+.modal-header img{
+  transform: scale(0.5);
+}
+.barang{
+  display: flex;
+  text-transform: capitalize;
+}
+.barang p{
+  margin: 10px;
+  padding: 5px auto;
+}
+.list_content{
+}
+.bbt button{
+  cursor: pointer;
+  float: right;
+  height: 40px;
+  width: 80px;
+  margin: 5px;
+  background-color: cadetblue;
+  border-color: black;
+}
+.bbt button:hover{
+  background-color: darkslateblue;
+}
 @keyframes drop {
     0% {
         opacity: 0;

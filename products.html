@@ -83,5 +83,44 @@
         </div>
       </div>
     </header>
+<div class="modal_pro">
+  <div class="modal_dialoge">
+    <div class="modalcontent">
+      <div class="modal-header">
+        <h3>your carts</h3> <hr>
+        <img src="../img/cart.png" alt="carts">
+      </div>
+      <div class="list_content">
+        <div class="barang">
+          <p>product 1</p><p>5 buah</p> <p>25.000</p>
+        </div>
+        <div class="barang">
+          <p>product 2</p><p>5 buah</p> <p>25.000</p>
+        </div>
+        <div class="bbt">
+          <button type="button" name="button">Prosses</button>
+          <button class="clear" type="reset">Hapus</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  let button = document.querySelector('.carts');
+  let modal = document.querySelector('.modal_pro');
+
+  button.addEventListener('click',function(){
+    modal.classList.add('show');
+  })
+  modal.addEventListener('click',function(){
+    this.classList.remove('show');
+  })
+  modal.querySelector('.modalcontent').addEventListener('click',function(e){
+      e.stopPropagation();
+  })
+  document.querySelector('.clear').addEventListener('click',function(){
+      modal.classList.remove('show');
+  })
+</script>
 </body>
 </html>
