@@ -103,12 +103,23 @@ li, a{
 .right_arr:hover{
   transform: scale(-1.5);
 }
+.hdn_name{
+  display: none;
+}
 .product_box{
   grid-row: 2/3;
   z-index: 10;
   margin: 30px;
   display: flex;
   flex-direction: column
+}
+.box_price{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.price{
+  font-family: 'Poppins';
 }
 .buy_btn{
   cursor: pointer;
@@ -142,7 +153,7 @@ li, a{
 .chart_btn:hover{
   background-color: #B7D12B;
 }
-.pr{
+.pr_img{
   width:auto;
   text-align:center;
   padding:20px;
@@ -261,12 +272,21 @@ opacity: 1;
 .barang{
   display: flex;
   text-transform: capitalize;
+  padding: 10px;
 }
-.barang p{
+.barang span{
   margin: 10px;
   padding: 5px auto;
 }
 .list_content{
+
+}
+.total{
+  left: 0;
+}
+.bbt{
+  display: flex;
+  justify-content: space-between;
 }
 .bbt button{
   cursor: pointer;

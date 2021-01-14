@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     <link rel="stylesheet" href="style/products.css">
+    <script src="product.js" async>
+
+    </script>
 </head>
 <body>
     <header>
@@ -22,13 +25,13 @@
         <div class="big_box">
         <div class="up_floaxbox">
           <div class="pr_bg box1">
-            <h1 class="pr">Corn</h1>
+            <h1 class="pr_name">Corn</h1>
           </div>
           <div class="pr_bg box2">
-              <h1 class="pr">Potato</h1>
+              <h1 class="pr_name">Potato</h1>
           </div>
           <div class="pr_bg bk3">
-            <h1 class="pr">Honey</h1>
+            <h1 class="pr_name">Honey</h1>
 
         </div>
           <div class="line_box">
@@ -37,7 +40,11 @@
           </div>
 
           <div class="product_box b1">
-            <img class="pr" src="img\Untitled-1.png" alt="idk">
+            <h1 class="hdn_name">Corn</h1>
+            <img class="pr_img" src="img\Untitled-1.png" alt="idk">
+            <div class="box_price">
+              <span class="price">RP 5.0000</span>
+            </div>
             <button class="buy_btn" type="button" name="button">
               buy</button>
             <button class="chart_btn" type="button" name="button">
@@ -53,14 +60,22 @@
           </div>
 
           <div class="product_box b2">
-            <img class="pr" src="https://raw.githubusercontent.com/hisyamsk/web-project/second/img/Untitled-2.png" alt="idk">
+            <h1 class="hdn_name">potato</h1>
+            <img class="pr_img" src="https://raw.githubusercontent.com/hisyamsk/web-project/second/img/Untitled-2.png" alt="idk">
+            <div class="box_price">
+              <span class="price">RP 8.0000</span>
+            </div>
               <button class="buy_btn" type="button" name="button">
                 buy</button>
               <button class="chart_btn" type="button" name="button">
                 add to cart</button>
           </div>
           <div class="product_box b3">
-            <img class="pr" src="img\Untitled-3.png" alt="idk">
+            <h1 class="hdn_name">Honey</h1>
+            <img class="pr_img" src="img\Untitled-3.png" alt="idk">
+            <div class="box_price">
+              <span class="price">RP 12.0000</span>
+            </div>
               <button class="buy_btn" type="button" name="button">
                 buy</button>
               <button class="chart_btn" type="button" name="button">
@@ -91,36 +106,16 @@
         <img src="../img/cart.png" alt="carts">
       </div>
       <div class="list_content">
-        <div class="barang">
-          <p>product 1</p><p>5 buah</p> <p>25.000</p>
-        </div>
-        <div class="barang">
-          <p>product 2</p><p>5 buah</p> <p>25.000</p>
-        </div>
+      </div>
+      <div class="footer-modal">
+        <span class="total">RP 0</span>
         <div class="bbt">
-          <button type="button" name="button">Prosses</button>
+          <button class="Prosses" type="button">Prosses</button>
           <button class="clear" type="reset">Hapus</button>
         </div>
       </div>
     </div>
   </div>
 </div>
-<script>
-  let button = document.querySelector('.carts');
-  let modal = document.querySelector('.modal_pro');
-
-  button.addEventListener('click',function(){
-    modal.classList.add('show');
-  })
-  modal.addEventListener('click',function(){
-    this.classList.remove('show');
-  })
-  modal.querySelector('.modalcontent').addEventListener('click',function(e){
-      e.stopPropagation();
-  })
-  document.querySelector('.clear').addEventListener('click',function(){
-      modal.classList.remove('show');
-  })
-</script>
 </body>
 </html>
