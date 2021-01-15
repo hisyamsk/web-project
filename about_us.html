@@ -38,69 +38,45 @@
           <img src="img/farmer.png" alt="petani">
         </div>
       </div>
+      <footer>
+        <div class="contact_box">
+        <h1>Contact</h1>
+          <div class="contact_list">
+            <a href="https://facebook.com"target="_blank">
+            <img class="icons" src="https://icons-for-free.com/iconfiles/png/512/fb+social+social+network+icon-1320191784253690412.png" alt="fb_icon">
+            </a>
+            <a href="https://twitter.com/"target="_blank">
+            <img class="icons" src="https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/twitter-512.png" alt="tw_icon">
+            </a>
+            <a href="https://www.instagram.com/"target="_blank">
+            <img class="icons" src="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png" alt="ig_logo">
+            </a>
+            <a href="https://line.me/"target="_blank">
+            <img class="icons" src="https://seeklogo.com/images/L/line-messenger-logo-F9E667D0A2-seeklogo.com.png" alt="line_icon">
+            </a>
+          </div>
+        </div>
+      </footer>
 
       <div class="modal">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header">  
+            <div class="modal-header">
               <span class="close">&times;</span>
             </div>
-            <div class="modal-div">
-              <a href="https://facebook.com"target="_blank">
-                  <img src="https://icons-for-free.com/iconfiles/png/512/fb+social+social+network+icon-1320191784253690412.png" alt="fb_icon" class="icons">
-              </a>
-              <div class="link">
-                <a href="https://facebook.com">Facebook</a>
-              </div>
-            </div>
-            <div class="modal-div">
-              <a href="https://twitter.com/"target="_blank">
-                <img class="icons" src="https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/twitter-512.png" alt="tw_icon">
-              </a>
-              <div class="link">
-                <a href="https://twitter.com/">Twitter</a>
-              </div>
-            </div>
-            <div class="modal-div">
-              <a href="https://www.instagram.com/"target="_blank">
-                <img class="icons" src="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png" alt="ig_logo">
-              </a>
-              <div class="link">
-                <a href="https://www.instagram.com/">Instagram</a>
-              </div>
-            </div>
-            <div class="modal-div">
-              <a href="https://line.me/"target="_blank">
-                <img class="icons" src="https://seeklogo.com/images/L/line-messenger-logo-F9E667D0A2-seeklogo.com.png" alt="line_icon">
-              </a>
-              <div class="link">
-                <a href="https://line.me/">Line</a>
+            <form class="cncus" action="about_us.html">
+              <span class="top">Form</span>
+              <input class="entry" type="text"placeholder="Name" required>
+              <input class="entry" type="email" placeholder="Email" required>
+              <input class="entry" type="text" placeholder="Subject" required>
+              <textarea class="entry" rows="8" cols="40" placeholder="Tell me more details" required></textarea>
+              <input type="submit" id="Snd" value="Send"/>
+            </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-    <footer>
-      <div class="contact_box">
-      <h1>Contact</h1>
-        <div class="contact_list">
-          <a href="https://facebook.com"target="_blank">
-          <img class="icons" src="https://icons-for-free.com/iconfiles/png/512/fb+social+social+network+icon-1320191784253690412.png" alt="fb_icon">
-          </a>
-          <a href="https://twitter.com/"target="_blank">
-          <img class="icons" src="https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/twitter-512.png" alt="tw_icon">
-          </a>
-          <a href="https://www.instagram.com/"target="_blank">
-          <img class="icons" src="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png" alt="ig_logo">
-          </a>
-          <a href="https://line.me/"target="_blank">
-          <img class="icons" src="https://seeklogo.com/images/L/line-messenger-logo-F9E667D0A2-seeklogo.com.png" alt="line_icon">
-          </a>
-        </div>
-      </div>
-    </footer>
-
     <script>
 
       let button = document.querySelector('button[data-toggle="modal"]');
@@ -119,8 +95,18 @@
       close.addEventListener('click', function() {
         modal.classList.remove('show');
       })
+      let warn = document.getElementById('Snd')
+      warn.addEventListener('click',alertContact)
 
-
+      function alertContact (event){
+        var getn = document.getElementsByClassName('entry')
+        for (var i=0;i< getn.length;i++){
+          if (getn[i].value ==""){ alert("fill the text pls")
+          return
+        }
+      }
+      alert('thank you '+getn[0].value+' for sending the email')
+    }
 
     </script>
   </body>
