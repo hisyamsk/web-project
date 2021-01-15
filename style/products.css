@@ -278,8 +278,30 @@ opacity: 1;
   margin: 10px;
   padding: 5px auto;
 }
+.pr_name{
+  width: 50px;
+}
+.pr_price{
+  width: 85px;
+}
 .list_content{
-
+  margin: 10px;
+}
+.carts-ntext{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row;
+}
+.qtt{
+  width: 50px;
+  height: 20px;
+  margin: 10px;
+}
+.rmv{
+  background-color: crimson;
+  height: 40px;
+  left: 0;
 }
 .total{
   left: 0;
