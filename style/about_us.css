@@ -260,4 +260,8 @@ h2{
 .contact_box h1{
   display: none;
   }
+
+.modal-content {
+  width: 80%;
+}
 }
